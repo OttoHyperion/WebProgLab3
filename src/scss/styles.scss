@@ -436,6 +436,207 @@ p {
   color: #81afdd;
 }
 
+/* превосходя ожидания*/
+.expectations{
+  display: flex;
+  align-items: flex-end;
+  column-gap: 1rem;
+}
+
+.expectations .expectations_left img {
+  width: 100%;
+}
+
+.expectations .expectations_right{
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 2rem;
+  flex: 2;
+}
+
+.expectations .expectations_right .first_text{
+  color: #71E5FF;
+}
+
+.expectations .expectations_right .main_text {
+  color: #81AFDD;
+}
+
+.expectations .expectations_right .request_early_access {
+  color: #f49867;
+  border-bottom: 1px solid transparent;
+}
+
+
+/* Кнопка */
+
+.botton_two{
+  display: flex;
+  margin: 6rem 0;
+  padding: 2rem;
+  background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+  width: 100%;
+  border-radius: 10.72px;
+}
+
+.botton_two .botton_two_left{
+  flex-direction: column;
+  display: flex;
+  row-gap: 1rem;
+  width: 60%;
+}
+
+.botton_two .botton_two_left .early{
+  font-size: 12px;
+  color: black;
+}
+
+.botton_two .botton_two_left .main_text{
+  color: black;
+}
+
+.botton_two .botton_two_right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.botton_two .botton_two_right .main_botton_two{
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  width: 190px;
+  height: 60px;
+  border-radius:  40px;
+  border: #000;
+}
+
+/* Хотите Шагнуть в Будущее Раньше Других? */
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 950px;
+  background-color: #06182c;
+  margin-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 2%;
+  box-sizing: border-box;
+}
+
+.footer .footer_header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footer .header_text_box {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 821px;
+  max-width: 821px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  margin-bottom: 20px;
+  word-wrap: break-word; 
+  word-break: break-word;
+  white-space: normal; 
+}
+
+.footer .btn_last {
+  display: flex;
+  padding: 1rem 4rem;
+  background-color: #031B34;
+  color: #8b8b8b;
+  border: none;
+  font-size: 18px;
+  border-radius: 0;
+  border: 2px solid #8b8b8b;
+  margin-top: 20px;
+}
+
+.footer .btn_box {
+  margin-top: -5%;
+}
+
+.footer .gpt_box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  width: 100%; 
+}
+
+.footer .logo,
+.footer .links,
+.footer .company,
+.footer .get_in_touch {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer .box_menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer .text_2, .footer .text_3 {
+  font-family: "Manrope", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-align: left;
+}
+
+.footer .text_1{
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  text-align: left;
+}
+
+.footer .text_1 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer .text_2 {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer .text_3 {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer .bottom_text {
+  font-family: "ManropeLight", sans-serif;
+  color: #ffffff;
+  background-color: #040C18;
+  font-size: 10px;
+  width: 100vw;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0; 
+  text-align: center;
+}
+
 /* Медиа запросы для адаптива */
 
 @media screen and (max-width: 1024px) {
@@ -640,4 +841,27 @@ p {
   .future_here .future_here__right {
     row-gap: 2rem;
   }
+
+  .expectations{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .expectations .expectations_left{
+    margin-bottom: 2rem;
+  }
+  .botton_two .botton_two_right .main_botton_two{
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    width: 90px;
+    height: 30px;
+    border-radius:  40px;
+    border: #000;
+  }
+  .footer{
+    margin-top: 10rem;
+  }
+  
 }

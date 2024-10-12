@@ -1,4 +1,3 @@
-
 import {expectationsTemplate} from "../templates/expectationsTemplate.js";
 import {expectationsData} from "../../mockData/expectationsData.js";
 
