@@ -81,4 +81,4 @@ const footerData={
     copyrightText,
 }
 
-export default footerData
+export default footerData;
