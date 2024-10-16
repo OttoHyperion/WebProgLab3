@@ -21,8 +21,6 @@ export const createLargeBlogTemplate = ({ image:{src}, data, text }) => {
       Читать полную статью
     </a>
   </div>
-
-
 `;
 };
 
@@ -41,7 +39,6 @@ export const createlittleBlogsTemplate = ({ image:{src}, data, text }) => {
         Читать полную статью
       </a>
   </div>
-
 `;
 };
 
