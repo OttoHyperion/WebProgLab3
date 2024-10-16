@@ -7,7 +7,6 @@ export const createHeaderTemplate = (header) => {
 };
 
 
-
 export const createLargeBlogTemplate = ({ image:{src}, data, text }) => {
   return `
   <div class="block_1">
@@ -28,7 +27,6 @@ export const createLargeBlogTemplate = ({ image:{src}, data, text }) => {
 };
 
 
-
 export const createlittleBlogsTemplate = ({ image:{src}, data, text }) => {
   return `
   <div class="block_3">
@@ -46,7 +44,6 @@ export const createlittleBlogsTemplate = ({ image:{src}, data, text }) => {
 
 `;
 };
-
 
 
 export const createFinalLittleBlogsTemplate = (blog_2) => {
