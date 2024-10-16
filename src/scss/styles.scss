@@ -143,7 +143,7 @@ p {
   padding: 2rem 0;
   position: fixed;
   justify-content: space-between;
-  align-items: center;
+  align-items: absolute; z-index: 2;
   background: #031b34;
 }
 
@@ -514,6 +514,118 @@ p {
   border: #000;
 }
 
+
+/* Блог */
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin: 6rem 0 2rem;
+}
+
+.blog .blog_header {
+  display: flex;
+  align-items: flex-start;
+  width: 59%;
+  font-size: 45px; 
+  line-height: 75px; 
+  margin-bottom: 10px;
+}
+
+.blog .text_and_img {
+  display: flex;
+  width: 100%; 
+}
+
+.blog .text_and_img .block_1 {
+  display: flex;
+  background-color: #042C54; 
+  width: 36%; 
+  height: 695px; 
+  margin-right: 20px; 
+  position: relative;
+}
+
+.blog .text_and_img .block_1 .block_1_image{
+  width: 100%; 
+  height: 40%; 
+  object-fit: cover; 
+  position: absolute; z-index: 1; 
+  top: 0; 
+  left: 0; 
+}
+
+.blog .block_2 {
+  display: flex;
+  width: 60%; 
+  display: flex;
+  flex-wrap: wrap; 
+  height: 100%; 
+  gap: 20px; 
+  position: relative;
+}
+
+.blog .block_2 > div {
+  display: flex;
+  background-color: #042C54; 
+  width: 327px; 
+  height: 330px; 
+  box-sizing: border-box; 
+  position: relative;
+}
+
+.blog .block_2 img {
+  width: 100%;
+  height: 60%; 
+  position: absolute; z-index: 1;
+  top: 0; 
+  left: 0; 
+}
+ 
+
+
+.blog .data_1, .text_1, .link_its_future {
+  opacity: 1; 
+}
+
+.blog .data_1{
+  font-size: 11.65px;
+  position: absolute; z-index: 1;
+  bottom: 55%; 
+}
+.blog .text_1{
+  font-size: 25.11px;
+    font-weight: bold;
+    position: absolute; z-index: 1;
+    bottom: 45%; 
+}
+
+.blog .link_its_future {
+  font-size: 12px;
+
+  position: absolute; z-index: 1; 
+  bottom: 0;
+  left: 0; 
+}
+
+.blog .data_2{
+  font-size: 11.65px;
+  position: absolute; z-index: 1;
+  bottom: 36%; 
+}
+
+.blog .text_2{
+  font-size: 23px;
+    font-weight: bold;
+    position: absolute; z-index: 1; 
+    bottom: 7%; 
+}
+
+.blog .text_1 {
+  bottom: 7%;
+}
+
 /* Хотите Шагнуть в Будущее Раньше Других? */
 
 .footer {
@@ -848,8 +960,71 @@ p {
     border-radius:  40px;
     border: #000;
   }
+
+  .blog {
+    margin: 0rem 0 2rem;
+  }
+
+
+  .blog .blog_header {
+    width: 100%;
+  }
+
+  .blog .block_1 {
+    
+    width: 100%;
+    height: 330px;
+    margin-bottom: 20px; 
+  }
+
+  .blog .text_and_img {
+    
+    flex-direction: column;
+  }
+
+  .blog .block_2 {
+    width: 100%;
+    height: 100%;
+    
+
+    
+  }
+  .blog .block_2 > div {
+    
+    width: 100%;
+    
+  }
+  
+
+
+  .blog .block_1_image{
+    
+    height: 60%; 
+    
+  }
+
+  
+  .blog .data_1{
+     
+    bottom: 36%; 
+  }
+  
+  .blog .text_1 {
+    bottom: 7%;
+  }
+  
   .footer{
     margin-top: 10rem;
   }
+
   
+}
+
+@media screen and (max-width: 425px) {
+  .blog .text_1 {
+    font-size: 15px;
+  }
+  .blog .text_2 {
+    font-size: 15px;
+  }
 }

@@ -7,6 +7,7 @@ import initBurger from "./../components/initBurger.js";
 import initexpectations from "../components/initexpectations.js";
 import inittwoButton from "../components/inittwoButton.js";
 import initfooter from "../components/initfooter.js";
+import initblog from "./../components/initblog.js";
 
 const createHomePageTemplate = (rootNode) => {
   // формируем шаблон базовых секций для дальнейшего монтирования в них
@@ -19,6 +20,7 @@ const createHomePageTemplate = (rootNode) => {
     <section class="section future_here"></section>
     <section class="section expectations"></section>
     <section class="section botton_two"></section>
+    <section class="section blog"></section>
     <section class="section footer"></section>
   `;
 
@@ -57,6 +59,10 @@ const homePage = () => {
   // инициализация раздела "Вторая кнопка"
   const twoButtonNode = rootNode.querySelector(".botton_two");
   inittwoButton(twoButtonNode);
+
+  // инициализация раздела "Блог"
+  const blogNode = rootNode.querySelector(".blog");
+  initblog(blogNode)
 
   // инициализация раздела "футер"
   const footerNode = rootNode.querySelector(".footer");
